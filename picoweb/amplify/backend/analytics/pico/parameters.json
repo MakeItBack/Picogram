@@ -1,0 +1,21 @@
+{
+    "appName": "pico",
+    "roleName": "pinpointLambdaRolef415a0ee",
+    "cloudformationPolicyName": "cloudformationPolicyf415a0ee",
+    "cloudWatchPolicyName": "cloudWatchPolicyf415a0ee",
+    "pinpointPolicyName": "pinpointPolicyf415a0ee",
+    "authPolicyName": "pinpoint_amplify_f415a0ee",
+    "unauthPolicyName": "pinpoint_amplify_f415a0ee",
+    "authRoleName": {
+        "Ref": "AuthRoleName"
+    },
+    "unauthRoleName": {
+        "Ref": "UnauthRoleName"
+    },
+    "authRoleArn": {
+        "Fn::GetAtt": [
+            "AuthRole",
+            "Arn"
+        ]
+    }
+}
