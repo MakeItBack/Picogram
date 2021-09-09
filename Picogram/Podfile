@@ -1,0 +1,20 @@
+project 'Picogram.xcodeproj'
+
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'Picogram' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for Picogram
+  pod 'AWSUserPoolsSignIn'
+  pod 'AWSAuthUI'
+  Pod 'AWSMobileClient'
+
+  target 'PicogramTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
