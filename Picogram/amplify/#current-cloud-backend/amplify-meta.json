@@ -1,0 +1,49 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-pico-dev-183253-authRole",
+      "UnauthRoleArn": "arn:aws:iam::133562719411:role/amplify-pico-dev-183253-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::133562719411:role/amplify-pico-dev-183253-authRole",
+      "Region": "ap-southeast-2",
+      "DeploymentBucketName": "amplify-pico-dev-183253-deployment",
+      "UnauthRoleName": "amplify-pico-dev-183253-unauthRole",
+      "StackName": "amplify-pico-dev-183253",
+      "StackId": "arn:aws:cloudformation:ap-southeast-2:133562719411:stack/amplify-pico-dev-183253/5e6d11a0-107f-11ec-8915-0a49f891e1a0",
+      "AmplifyAppId": "d24e7tvm8ijays"
+    }
+  },
+  "auth": {
+    "cognito8892cbff": {
+      "service": "Cognito",
+      "serviceType": "managed",
+      "providerPlugin": "awscloudformation",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-pico-dev-183253-deployment/amplify-cfn-templates/auth/cognito8892cbff-cloudformation-template.yml",
+        "logicalId": "authcognito8892cbff"
+      },
+      "lastPushTimeStamp": "2021-09-08T08:46:52.703Z",
+      "output": {
+        "IdentityPoolId": "ap-southeast-2:caa5635a-d6ec-4687-9f82-4b04e5ac4cb9",
+        "IdentityPoolName": "pico_identitypool_8892cbff__dev"
+      },
+      "lastPushDirHash": "y6pQrORQOIetdsD3TBbZNpxQkZk="
+    }
+  },
+  "analytics": {
+    "pico": {
+      "service": "Pinpoint",
+      "providerPlugin": "awscloudformation",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-pico-dev-183253-deployment/amplify-cfn-templates/analytics/pinpoint-cloudformation-template.json",
+        "logicalId": "analyticspico"
+      },
+      "lastPushTimeStamp": "2021-09-08T08:46:52.703Z",
+      "output": {
+        "appName": "pico-dev",
+        "Region": "us-west-2",
+        "Id": "7912ad90328a42b1a5688e68758001c0"
+      },
+      "lastPushDirHash": "Ge5TuICX1tJHCa5ntugtJ8oV6Bg="
+    }
+  }
+}
